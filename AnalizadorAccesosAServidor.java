@@ -19,6 +19,7 @@ public class AnalizadorAccesosAServidor {
     }
     
     /**
+     * Lee el archivo de log introducido por parámetro y guarda sus datos.
      * @param nombreDelArchivoDeLog El nombre del archivo de log
      * que va a ser leído.
      */
