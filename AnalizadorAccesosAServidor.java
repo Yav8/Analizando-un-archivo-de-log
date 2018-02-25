@@ -5,14 +5,16 @@ import java.util.ArrayList;
 import java.util.HashSet;
 
 /**
- * Clase AnalizadorAccesosAServidor.
+ * La clase AnalizadorAccesosAServidor analiza los accesos 
+ * producidos al servidor.
  * @author Javier de Cea Domínguez.
+ * @version 2018.02.25
  */
 public class AnalizadorAccesosAServidor {
     private ArrayList<Acceso> listaDeDatosDeAcceso;
     
     /**
-     * Constructor de la clase AnalizadorAccesosAServidor.
+     * Constructor para objetos de la clase AnalizadorAccesosAServidor.
      */
     public AnalizadorAccesosAServidor() {
         listaDeDatosDeAcceso = new ArrayList<>();
@@ -38,10 +40,12 @@ public class AnalizadorAccesosAServidor {
     }
     
     /**
-     * Devuelve la hora con mas accesos y la muestra por pantalla,
-     * en caso de no haber ningún acceso informa de dicho acontecimiento.
+     * Devuelve la hora con mas accesos y la muestra por pantalla 
+     * (a continuación se borran los datos de acceso), en caso de no 
+     * haber ningún acceso informa de dicho acontecimiento. 
      * @return Devuelve un int que equivale a la hora con más accesos.
-     * Si hay empate, devuelve la más alta.
+     * Si hay empate, devuelve la hora más alta, o si no hay datos de 
+     * acceso devuelve -1.
      */
     public int obtenerHoraMasAccesos() {
         int horaConMasAccesos = -1;
